@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BUDA Auto Styling — suspension, wheels, alignment and car-care products.">
+  <title>Contact | BUDA Auto Styling</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <a class="brand" href="index.html"><img src="images/logo.png" alt="BUDA Auto Styling logo"></a>
+  <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="shop.html">Shop</a>
+    <a class="nav-cta" href="contact.html">Contact Us</a>
+  </div>
+</nav>
+
+<main>
+  <section class="page-hero">
+    <p class="eyebrow">CONTACT US</p>
+    <h1>Let's talk about<br><span>your build.</span></h1>
+    <p>Have a suspension, wheel or car-care question? Send an enquiry and the BUDA team can help you plan your next step.</p>
+  </section>
+
+  <section class="section contact-grid">
+    <div>
+      <p class="eyebrow">GET IN TOUCH</p>
+      <h2>Start with an <span>enquiry.</span></h2>
+      <div class="contact-details">
+        <p><strong>Phone</strong><br>[Add business number]</p>
+        <p><strong>Email</strong><br>[Add business email]</p>
+        <p><strong>Location</strong><br>[Add shop location]</p>
+        <p><strong>Hours</strong><br>Mon–Sat: [Add hours]</p>
+      </div>
+    </div>
+    <form class="contact-form" action="#" method="post">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" placeholder="Your name" required>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" required>
+      <label for="service">What do you need?</label>
+      <select id="service" name="service">
+        <option>Air suspension</option>
+        <option>Coilovers</option>
+        <option>Static suspension</option>
+        <option>Wheel alignment</option>
+        <option>Wheels / fitment</option>
+        <option>Car-care products</option>
+        <option>Other</option>
+      </select>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="Tell us about your car and what you're planning..." required></textarea>
+      <button class="button primary" type="submit">Send Enquiry</button>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <div>
+    <a class="brand" href="index.html"><img src="images/logo.png" alt="BUDA Auto Styling logo"></a>
+    <p>Suspension. Wheels. Stance. Care.</p>
+  </div>
+  <div class="footer-links">
+    <a href="services.html">Services</a>
+    <a href="shop.html">Shop</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <p class="copyright">© 2026 BUDA Auto Styling. Student project.</p>
+</footer>
+
+<script>
+const toggle = document.querySelector('.menu-toggle'), links = document.querySelector('.nav-links');
+toggle.addEventListener('click', () => { const open = links.classList.toggle('open'); toggle.setAttribute('aria-expanded', open); });
+</script></body></html>
